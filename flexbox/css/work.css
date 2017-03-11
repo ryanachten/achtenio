@@ -76,9 +76,11 @@ header, footer{
 		margin: 1.5%;
 	}
 	.project-header-descript{
-		width: 50%;
-	}
-	.project-header-descript{
 		width: 25%;
+	}
+	.container{
+		width: 1400px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
