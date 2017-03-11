@@ -11,17 +11,18 @@ header, footer{
 	display: flex;
 	flex-wrap: wrap;
 	/*margin: 0em 1em;*/
-	padding: 
+	/*padding: */
 }
 
 .project-header{
 	width: 100%;
 	/*min-width: 400px;
 	min-height: 300px;*/
-	background-image: url(http://placehold.it/400x300);
+	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2672f246479293.5856220a8906e.jpg);
 	background-size: cover;
 	background-position: center;
-	margin: 0.5em 1em;
+	/*border: solid 3px #f9f5ef;*/
+	/*margin: 0.7em;*/
 }
 .project-header-descript{
 	width: 100%;
@@ -55,16 +56,29 @@ header, footer{
 @media screen and (max-width: 500px){
 	.project-cover{
 		width: 100%;
-		margin: 0.5em 0.5em;
+		margin: 3.5% 7%;
 	}
 }
 
 @media screen and (min-width: 960px){
 	.project-cover{
-		width: 30%; 
-		margin: 0.5em 1em;
+		width: 28%; 
+		margin: 2.5%;
 	}
 	.project-header-descript{
 		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1400px){
+	.project-cover{
+		width: 22%; 
+		margin: 1.5%;
+	}
+	.project-header-descript{
+		width: 50%;
+	}
+	.project-header-descript{
+		width: 25%;
 	}
 }
