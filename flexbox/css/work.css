@@ -1,0 +1,59 @@
+/**{
+	border: 1px solid red !important; 
+}*/
+
+header, footer{
+	/*display: inline-block;*/
+}
+
+.container{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	/*margin: 0em 1em;*/
+	padding: 
+}
+
+.project-header{
+	width: 100%;
+	/*min-width: 400px;
+	min-height: 300px;*/
+	background-image: url(http://placehold.it/400x300);
+	background-size: cover;
+	background-position: center;
+	margin: 0.5em 1em;
+}
+.project-header-descript{
+	width: 50%;
+	background-color: rgba(255,255,255,0.5);
+	background-size: cover;
+	display: inline-block;
+}
+.pullquote{
+	text-align: center;
+}
+
+.project-cover{
+	width: 45%;
+	height: 200px;
+	/*min-height: 300px;*/
+	background-image: url(http://placehold.it/400x300);
+	background-size: cover;
+	background-position: center;
+	margin: 2.5%;
+}
+
+
+@media screen and (max-width: 500px){
+	.project-cover{
+		width: 100%;
+		margin: 0.5em 0.5em;
+	}
+}
+
+@media screen and (min-width: 960px){
+	.project-cover{
+		width: 30%; 
+		margin: 0.5em 1em;
+	}
+}
