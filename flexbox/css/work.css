@@ -24,10 +24,11 @@ header, footer{
 	margin: 0.5em 1em;
 }
 .project-header-descript{
-	width: 50%;
+	width: 100%;
 	background-color: rgba(255,255,255,0.5);
 	background-size: cover;
 	display: inline-block;
+	padding: 15px;
 }
 .pullquote{
 	text-align: center;
@@ -44,6 +45,13 @@ header, footer{
 }
 
 
+/*@media screen and (max-width: 500px){
+	.project-cover{
+		width: 100%;
+		margin: 0.5em 0.5em;
+	}
+}*/
+
 @media screen and (max-width: 500px){
 	.project-cover{
 		width: 100%;
@@ -55,5 +63,8 @@ header, footer{
 	.project-cover{
 		width: 30%; 
 		margin: 0.5em 1em;
+	}
+	.project-header-descript{
+		width: 50%;
 	}
 }
