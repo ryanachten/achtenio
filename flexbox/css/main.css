@@ -39,10 +39,12 @@ h2{
 #top-nav{
 	margin-top: 20px;
 	margin-bottom: 10px;
+	text-align: center;
 }
 #bottom-nav{
 	/*margin-top: 5px;*/
-	margin-bottom: 20px;	
+	margin-bottom: 20px;
+	text-align: center;	
 }
 .nav-link{
 	color: black;  /*TODO -replace w/ proper color*/
@@ -50,6 +52,7 @@ h2{
 	font-size: 12pt;
 	padding-left: 15px;
 	padding-right: 15px;
+	text-decoration: none;
 }
 .nav-ra-logo{
 	font-family: 'Kumar One', cursive;
