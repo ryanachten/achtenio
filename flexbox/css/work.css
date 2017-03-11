@@ -10,15 +10,12 @@ header, footer{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	/*margin: 0em 1em;*/
-	/*padding: */
+	justify-content: center;
 }
 
 .project-header{
 	width: 100%;
-	/*min-width: 400px;
-	min-height: 300px;*/
-	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2672f246479293.5856220a8906e.jpg);
+	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/0773db44228025.580c5b7479cb6.png);
 	background-size: cover;
 	background-position: center;
 	/*border: solid 3px #f9f5ef;*/
@@ -36,31 +33,48 @@ header, footer{
 }
 
 .project-cover{
-	width: 45%;
+	
 	height: 200px;
-	/*min-height: 300px;*/
-	background-image: url(http://placehold.it/400x300);
 	background-size: cover;
 	background-position: center;
 	margin: 2.5%;
 }
 
+#project1{
+	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2672f246479293.5856220a8906e.jpg);
+}#project2{
+	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/c6b1ab33085305.569f5a24623a4.jpg);
+}#project3{
+	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/14946c31454845.5652cbd7cf5ec.png);
+}#project4{
+	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/a8dbbb25002761.563439d23bb28.png);	
+}#project5{
+	background-image: url(https://mir-s3-cdn-cf.behance.net/projects/original/21053901.5461878594fcf.jpg);
+}#project6{
+	background-image: url(https://mir-s3-cdn-cf.behance.net/projects/original/17953035.548d372c3bee8.jpg);	
+}#project7{
+	background-image: url(https://mir-s3-cdn-cf.behance.net/projects/original/80365b16942195.556db7c828a14.png);
+}#project8{
+	background-image: url(https://mir-s3-cdn-cf.behance.net/projects/original/15783425.548a0eb1cc888.jpg);	
+}
 
-/*@media screen and (max-width: 500px){
-	.project-cover{
-		width: 100%;
-		margin: 0.5em 0.5em;
-	}
-}*/
 
-@media screen and (max-width: 500px){
+
+@media screen and (max-width: 600px){
 	.project-cover{
 		width: 100%;
 		margin: 3.5% 7%;
 	}
 }
 
-@media screen and (min-width: 960px){
+@media screen and (min-width: 600px){
+	.project-cover{
+		width: 45%;
+	}
+
+}
+
+@media screen and (min-width: 800px){
 	.project-cover{
 		width: 28%; 
 		margin: 2.5%;
@@ -70,7 +84,7 @@ header, footer{
 	}
 }
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1200px){
 	.project-cover{
 		width: 22%; 
 		margin: 1.5%;
@@ -79,7 +93,7 @@ header, footer{
 		width: 25%;
 	}
 	.container{
-		width: 1400px;
+		width: 1200px;
 		margin-left: auto;
 		margin-right: auto;
 	}
