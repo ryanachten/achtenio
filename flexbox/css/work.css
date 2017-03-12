@@ -2,10 +2,6 @@
 	border: 1px solid red !important; 
 }*/
 
-header, footer{
-	/*display: inline-block;*/
-}
-
 .container{
 	width: 100%;
 	display: flex;
@@ -18,28 +14,41 @@ header, footer{
 	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/0773db44228025.580c5b7479cb6.png);
 	background-size: cover;
 	background-position: center;
-	/*border: solid 3px #f9f5ef;*/
-	/*margin: 0.7em;*/
+	margin-bottom: 20px;
 }
 .project-header-descript{
+	display: inline-block;
 	width: 100%;
 	background-color: rgba(255,255,255,0.5);
 	background-size: cover;
-	display: inline-block;
 	padding: 15px;
-}
-.pullquote{
 	text-align: center;
 }
+#header-seperator{
+	border: 1px dashed grey;
+}
+.pullquote{
+	font-size: 0.8em;
+	line-height: 2em;
+}
+.text-button{
+	padding: 10px;
+	border: 1px solid #4D4D4D;
+	color: #4D4D4D;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 0.8em;
+	background-color: rgba(255,255,255,0.3);
+}
+
 
 .project-cover{
-	
 	height: 200px;
 	background-size: cover;
 	background-position: center;
-	margin: 2.5%;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
-
 #project1{
 	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2672f246479293.5856220a8906e.jpg);
 }#project2{
@@ -59,25 +68,34 @@ header, footer{
 }
 
 
+#behance-hook{
+	text-align: center;
+	margin-bottom: 40px;
+	line-height: 1em;
+}
+#hook-logo{
+	font-family: 'Kumar One', cursive;
+}
+
 
 @media screen and (max-width: 600px){
 	.project-cover{
 		width: 100%;
-		margin: 3.5% 7%;
 	}
 }
 
 @media screen and (min-width: 600px){
 	.project-cover{
 		width: 45%;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
 	}
 
 }
 
 @media screen and (min-width: 800px){
 	.project-cover{
-		width: 28%; 
-		margin: 2.5%;
+		height: 300px;
 	}
 	.project-header-descript{
 		width: 50%;
@@ -86,8 +104,11 @@ header, footer{
 
 @media screen and (min-width: 1200px){
 	.project-cover{
-		width: 22%; 
-		margin: 1.5%;
+		height: 350px;
+		margin-bottom: 30px;
+	}
+	.project-header{
+		margin-bottom: 30px;
 	}
 	.project-header-descript{
 		width: 25%;

@@ -34,6 +34,9 @@ h2{
 	font-family: 'Libre Baskerville', serif;
 	font-size: 1.2em;
 }
+a{
+	text-decoration: none;
+}
 
 /*Nav Bars*/
 #top-nav{
@@ -52,7 +55,6 @@ h2{
 	font-size: 12pt;
 	padding-left: 15px;
 	padding-right: 15px;
-	text-decoration: none;
 }
 .nav-ra-logo{
 	font-family: 'Kumar One', cursive;
