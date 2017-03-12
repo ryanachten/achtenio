@@ -1,3 +1,44 @@
-body{
-	background-color: red;
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;	
+}
+
+/*Project Header*/
+#project-header{
+	width: 80%;
+}
+#project-title{
+	width: 100%;
+}
+#project-subtitle{
+	width: 100%;
+}
+.header-seperator{
+	border: 1px dashed grey;
+	width: 100%;
+}
+#project-overview{
+	text-align: center;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Project Content Styles*/
+.project-content{
+	width: 80%;
+}
+
+.video-embed{
+	position: relative;
+	width: 80%;
+	padding-bottom: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.video-embed iframe{
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
