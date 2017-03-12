@@ -2,6 +2,11 @@
 	border: 1px solid red !important; 
 }*/
 
+.work-overview{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
 .container{
 	width: 100%;
 	display: flex;
@@ -9,6 +14,7 @@
 	justify-content: center;
 }
 
+/*Hero project cover*/
 .project-header{
 	width: 100%;
 	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/0773db44228025.580c5b7479cb6.png);
@@ -23,6 +29,9 @@
 	background-size: cover;
 	padding: 15px;
 	text-align: center;
+}
+#project-header-title{
+	font-size: 3em;
 }
 #header-seperator{
 	border: 1px dashed grey;
@@ -41,6 +50,7 @@
 }
 
 
+/*General project covers*/
 .project-cover{
 	height: 200px;
 	background-size: cover;
@@ -68,16 +78,18 @@
 }
 
 
+/*Behance hook*/
 #behance-hook{
 	text-align: center;
 	margin-bottom: 40px;
-	line-height: 1em;
+	line-height: 1.5em;
 }
 #hook-logo{
 	font-family: 'Kumar One', cursive;
 }
 
 
+/*Breakpoints*/
 @media screen and (max-width: 600px){
 	.project-cover{
 		width: 100%;

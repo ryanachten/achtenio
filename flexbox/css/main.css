@@ -24,7 +24,7 @@ h1{
 }
 h2{
 	font-family: 'Libre Baskerville', cursive;
-	font-size: 2em;
+	font-size: 1.5em;
 	color: #333333;
 	text-transform: lowercase;
 	text-align: center;
@@ -62,7 +62,7 @@ a{
 }
 .nav-seperator{ 
 	border: 1px solid grey;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 
