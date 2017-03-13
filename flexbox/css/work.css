@@ -12,7 +12,7 @@
 	display: -webkit-flex;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 }
 
 /*Hero project cover*/
@@ -31,13 +31,13 @@
 	padding: 15px;
 	text-align: center;
 }
-#project-header-title{
+.project-header-descript h1{
 	font-size: 3em;
 }
 #header-seperator{
 	border: 1px dashed grey;
 }
-.pullquote{
+.project-header-descript .pullquote{
 	font-size: 0.8em;
 	line-height: 2em;
 }
@@ -57,9 +57,27 @@
 	background-size: cover;
 	background-position: center;
 	margin-bottom: 20px;
-	margin-left: 20px;
-	margin-right: 20px;
 }
+/*.project-cover:hover{
+	background-color: red;
+}*/
+
+.rollover{
+	display: none;
+}
+.rollover-active{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(255,255,255,0.5);
+	padding: 10% 5%;
+	overflow-y: auto;
+}
+.cover-rollover .pullquote{
+	font-size: 1em;
+}
+
 #project1{
 	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2672f246479293.5856220a8906e.jpg);
 }#project2{
@@ -94,16 +112,15 @@
 @media screen and (max-width: 600px){
 	.project-cover{
 		width: 100%;
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 }
 
 @media screen and (min-width: 600px){
 	.project-cover{
 		width: 45%;
-		margin-left: 2.5%;
-		margin-right: 2.5%;
 	}
-
 }
 
 @media screen and (min-width: 800px){
