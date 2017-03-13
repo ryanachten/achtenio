@@ -26,7 +26,7 @@
 .project-header-descript{
 	display: inline-block;
 	width: 100%;
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.7);
 	background-size: cover;
 	padding: 15px;
 	text-align: center;
@@ -47,7 +47,7 @@
 	color: #4D4D4D;
 	font-family: 'Libre Baskerville', serif;
 	font-size: 0.8em;
-	background-color: rgba(255,255,255,0.3);
+	background-color: #f9f5ef;
 }
 
 
@@ -58,10 +58,6 @@
 	background-position: center;
 	margin-bottom: 20px;
 }
-/*.project-cover:hover{
-	background-color: red;
-}*/
-
 .rollover{
 	display: none;
 }

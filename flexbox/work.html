@@ -43,17 +43,52 @@
 		</div>
 		<div id="project1" class="project-cover">
 			<div class="rollover">
-				<h2>MOSES Releases</h2>
+				<h2>MOSES Album</h2>
 				<p class="pullquote">Album design and artwork for the self-titled debut album by New Zealand psychedelic band, MOSES.</p>
 			</div>
 		</div>
-		<div id="project2" class="project-cover"></div>
-		<div id="project3" class="project-cover"></div>
-		<div id="project4" class="project-cover"></div>
-		<div id="project5" class="project-cover"></div>
-		<div id="project6" class="project-cover"></div>
-		<div id="project7" class="project-cover"></div>
-		<div id="project8" class="project-cover"></div>
+		<div id="project2" class="project-cover">
+			<div class="rollover">
+				<h2>Doprah 'Wasting' Album</h2>
+				<p class="pullquote">‘Wasting’ album and b-side release artwork for New Zealand electronic act, Doprah.</p>
+			</div>
+		</div>
+		<div id="project3" class="project-cover">
+			<div class="rollover">
+				<h2>MOSES II Ep</h2>
+				<p class="pullquote">Design and artwork for the second release, ‘MOSES II’, from New Zealand psychedelic band, MOSES.</p>
+			</div>
+		</div>
+		<div id="project4" class="project-cover">
+			<div class="rollover">
+				<h2>VUW Summer Scholarship - DAotF</h2>
+				<p class="pullquote">Digital Archive of the Future is a VUW Summer Scholarship 2015 collaboration between Victoria University of Wellington and the National Library of New Zealand exploring the role of 3D media within the context of libraries.</p>
+			</div>
+		</div>
+		<div id="project5" class="project-cover">
+			<div class="rollover">
+				<h2>Oskelate - Skeleton Visualiser</h2>
+				<p class="pullquote">Oskelate is a skeleton music visualiser built in Pure Data (Pd) and Java.</p>
+			</div>
+		</div>
+		<div id="project6" class="project-cover">
+			<div class="rollover">
+				<h2>~SomaVision - Visualiser Interface</h2>
+				<p class="pullquote">~SomaVision is a digital hardware interface that combines Pure Data software and Arduino hardware to create a visualiser that is responsive to audio input and user control.</p>
+			</div>
+		</div>
+		<div id="project7" class="project-cover">
+			<div class="rollover">
+				<h2>[VideoCaos] - Visualiser Interface</h2>
+				<p class="pullquote">[VideoCaos] is a digital hardware interface that combines Pure Data software and Arduino hardware to create a visualiser that is responsive to audio input and user control.</p>
+			</div>
+		</div>
+		<div id="project8" class="project-cover">
+			<div class="rollover">
+				<h2>Distortion_Unit + GenCam</h2>
+				<p class="pullquote">The Distortion Unit and Gencam are part of an interactive design and physical computing project aiming to explore video media through audience participation and performative means.</p>
+			</div>
+		</div>
 	</main>
 
 	<section id="behance-hook">
@@ -76,12 +111,12 @@
 			var coverImages = document.getElementsByClassName("project-cover");
 			for (var i = 0; i < coverImages.length; i++) {
 				coverImages[i].addEventListener("mouseenter", function(){
-					console.log("Mouse enter: " + this.getAttribute('id'));
+					// console.log("Mouse enter: " + this.getAttribute('id'));
 					var coverRoll = this.children[0];
 					coverRoll.classList.toggle('rollover-active');
 				});
 				coverImages[i].addEventListener("mouseleave", function(){
-					console.log("Mouse leave: " + this.getAttribute('id'));
+					// console.log("Mouse leave: " + this.getAttribute('id'));
 					var coverRoll = this.children[0];
 					coverRoll.classList.toggle('rollover-active');
 				});
