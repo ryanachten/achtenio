@@ -57,6 +57,7 @@
 	background-size: cover;
 	background-position: center;
 	margin-bottom: 20px;
+	animation: fadein 2s;	
 }
 .rollover{
 	display: none;
@@ -66,11 +67,12 @@
 	height: 100%;
 	width: 100%;
 	text-align: center;
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.7);
 	padding: 10% 5%;
 	overflow-y: auto;
+	vertical-align: middle;
 }
-.cover-rollover .pullquote{
+.rollover .pullquote{
 	font-size: 1em;
 }
 
@@ -145,3 +147,9 @@
 		margin-right: auto;
 	}
 }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
