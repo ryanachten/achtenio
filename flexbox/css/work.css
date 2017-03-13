@@ -57,12 +57,12 @@
 	background-size: cover;
 	background-position: center;
 	margin-bottom: 20px;
-	animation: fadein 2s;	
 }
 .rollover{
 	display: none;
 }
 .rollover-active{
+	animation: fadein 2s;
 	display: inline-block;
 	height: 100%;
 	width: 100%;
