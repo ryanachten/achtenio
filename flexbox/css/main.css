@@ -70,10 +70,17 @@ a{
 	color: #4d4d4d;
 }
 .nav-seperator{ 
+	animation: expandNav 2s;
 	border: 1px solid grey;
 	margin-bottom: 30px;
+	width: 80%;
 }
 
+
+@keyframes expandNav{
+	from {width: 0%;}
+	to   {width: 80%;}
+}
 
 /*Behance hook*/
 #behance-hook{
