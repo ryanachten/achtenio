@@ -115,21 +115,28 @@
 	</footer>
 </body>
 	<script type="text/javascript">
-		function rollover(){
-			var coverImages = document.getElementsByClassName("project-cover");
+		var projects = document.getElementsByClassName("project-cover");
+		projectFadeIn(projects);
+		rollover(projects);
+
+		function projectFadeIn(projects){	
+			for (var i=0; i < projects.length; i++){
+				var curProjectId = '#' + projects[i].getAttribute('id');
+				$(curProjectId).delay(1000*i).fadeTo("slow", 1);
+			}
+		}
+
+		function rollover(coverImages){
 			for (var i = 0; i < coverImages.length; i++) {
 				coverImages[i].addEventListener("mouseenter", function(){
-					// console.log("Mouse enter: " + this.getAttribute('id'));
 					var coverRoll = this.children[0];
 					coverRoll.classList.toggle('rollover-active');
 				});
 				coverImages[i].addEventListener("mouseleave", function(){
-					// console.log("Mouse leave: " + this.getAttribute('id'));
 					var coverRoll = this.children[0];
 					coverRoll.classList.toggle('rollover-active');
 				});
 			}
 		}
-		rollover();
 	</script>
 </html>

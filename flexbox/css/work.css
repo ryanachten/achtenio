@@ -53,12 +53,14 @@
 
 /*General project covers*/
 .project-cover{
+	opacity: 0;
 	height: 200px;
 	background-size: cover;
 	background-position: center;
 	margin-bottom: 20px;
 }
 .rollover{
+
 	display: none;
 }
 .rollover-active{
