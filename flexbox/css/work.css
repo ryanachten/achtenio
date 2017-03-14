@@ -41,14 +41,6 @@
 	font-size: 0.8em;
 	line-height: 2em;
 }
-.text-button{
-	padding: 10px;
-	border: 1px solid #4D4D4D;
-	color: #4D4D4D;
-	font-family: 'Libre Baskerville', serif;
-	font-size: 0.8em;
-	background-color: #f9f5ef;
-}
 
 
 /*General project covers*/
@@ -94,17 +86,6 @@
 	background-image: url(https://mir-s3-cdn-cf.behance.net/projects/original/80365b16942195.556db7c828a14.png);
 }#project8{
 	background-image: url(https://mir-s3-cdn-cf.behance.net/projects/original/15783425.548a0eb1cc888.jpg);	
-}
-
-
-/*Behance hook*/
-#behance-hook{
-	text-align: center;
-	margin-bottom: 40px;
-	line-height: 1.5em;
-}
-#hook-logo{
-	font-family: 'Kumar One', cursive;
 }
 
 

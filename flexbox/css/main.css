@@ -37,6 +37,15 @@ h2{
 a{
 	text-decoration: none;
 }
+.text-button{
+	padding: 10px;
+	border: 1px solid #4D4D4D;
+	color: #4D4D4D;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 0.8em;
+	background-color: #f9f5ef;
+}
+
 
 /*Nav Bars*/
 #top-nav{
@@ -65,3 +74,13 @@ a{
 	margin-bottom: 30px;
 }
 
+
+/*Behance hook*/
+#behance-hook{
+	text-align: center;
+	margin-bottom: 40px;
+	line-height: 1.5em;
+}
+#hook-logo{
+	font-family: 'Kumar One', cursive;
+}
