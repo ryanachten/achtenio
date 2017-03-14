@@ -27,6 +27,10 @@ header .nav-seperator{
 #project-title, #project-subtitle{
 	color: #f9f5ef;
 }
+.content-seperator{
+	border: 1px dashed #f9f5ef;
+	width: 40%;
+}
 
 /*Project Content*/
 #project-overview{

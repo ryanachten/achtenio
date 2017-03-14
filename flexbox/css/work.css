@@ -5,6 +5,10 @@
 .work-overview{
 	text-align: center;
 	margin-bottom: 30px;
+	padding-top: 10px;
+}
+.work-overview{
+	padding-top: 
 }
 
 .container{
@@ -29,6 +33,7 @@
 	background-color: rgba(255,255,255,0.7);
 	background-size: cover;
 	padding: 15px;
+	padding-top: 25px;
 	text-align: center;
 }
 .project-header-descript h1{
