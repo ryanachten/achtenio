@@ -1,0 +1,63 @@
+.container{
+	/*background-color: red;*/
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+#cv-overview{
+	width: 100%;
+}
+.section-header{
+	text-transform: uppercase;
+	width: 100%;
+}
+h3{
+	font-family: 'Libre Baskerville', cursive;
+	font-weight: 100;
+}
+ul{
+	padding: 0px;
+}
+
+li{
+	list-style: none;
+}
+
+.cv-section{
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 30px;
+
+}
+
+.skills-section{
+	text-align: center;
+	border: 1px dashed grey;
+	padding: 10px 20px;
+	width: 25%;
+}
+
+#experience{
+	width: 45%;
+	display: block;
+}
+#experience-section{
+	text-align: center;
+	border: 1px dashed grey;
+	padding: 10px 20px;
+}
+.job-position{
+	font-style: italic;
+}
+
+#education{
+	width: 45%;
+	display: block;
+}
