@@ -22,6 +22,7 @@
 /*Hero project cover*/
 .project-header{
 	width: 100%;
+	height: 400px;
 	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/0773db44228025.580c5b7479cb6.png);
 	background-size: cover;
 	background-position: center;
@@ -30,6 +31,7 @@
 .project-header-descript{
 	display: inline-block;
 	width: 100%;
+	height: 100%;
 	background-color: rgba(255,255,255,0.7);
 	background-size: cover;
 	padding: 15px;
@@ -38,6 +40,7 @@
 }
 .project-header-descript h1{
 	font-size: 3em;
+	line-height: 1.5em;
 }
 #header-seperator{
 	border: 1px dashed grey;
@@ -71,8 +74,17 @@
 	overflow-y: auto;
 	vertical-align: middle;
 }
+.rollover h1{
+	font-size: 3em;
+	margin-bottom: 5px;
+}
+.rollover h1{
+	font-size: 2em;
+	margin-bottom: 5px;
+}
 .rollover .pullquote{
 	font-size: 1em;
+	margin-top: 0px;
 }
 
 #project1{
@@ -127,7 +139,7 @@
 		margin-bottom: 30px;
 	}
 	.project-header-descript{
-		width: 25%;
+		width: 30%;
 	}
 	.container{
 		width: 1200px;

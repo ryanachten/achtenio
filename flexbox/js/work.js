@@ -1,7 +1,7 @@
 var projects = document.getElementsByClassName("project-cover");
 projectFadeIn(projects);
 rollover(projects);
-// carousel(projects);
+carousel(projects);
 
 function projectFadeIn(projects){	
 	for (var i=0; i < projects.length; i++){
@@ -54,11 +54,12 @@ function carousel(projects){
 	}
 	function changeText(){
 		var projHeader = rollovers[projCounter].children[0].innerText;
-		console.log(projHeader);
-		// var headerDescript =;
+		var projSubhead = rollovers[projCounter].children[1].innerText;
+		var projDescript = rollovers[projCounter].children[2].innerText;
+
 		var headerDescript = $(".project-header-descript");
 		headerDescript.children('h1').text(projHeader);
-
-
+		headerDescript.children('h2').text(projSubhead);
+		headerDescript.children('p').text(projDescript);
 	}
 }
