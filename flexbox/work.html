@@ -141,7 +141,6 @@
 		}
 
 		function carousel(projects){
-			var headerBgUrl = $(".project-header").css('background-image');
 			var bgUrls = [];
 			for (var i=0; i < projects.length; i++){
 				var curProjectId = '#' + projects[i].getAttribute('id');
@@ -150,13 +149,18 @@
 			}
 
 			var imgCounter = 0;
+			var header = $(".project-header");
 			var timer = setInterval(changeImage, 7000); //, bgUrls, imgCounter
 
 			function changeImage(){
 				console.log('imgCounter: ' + imgCounter + ' bg length: ' + bgUrls.length);
 				console.log('new url: ' + bgUrls[imgCounter]);
-				$(".project-header").css('background-image', bgUrls[imgCounter]);
-				// console.log('current url: ' + $(".project-header").css('background-image'));
+				
+				header.fadeTo("slow", 0, function(){
+					header.css('background-image', bgUrls[imgCounter]);
+					header.fadeTo("slow", 1);
+				});
+				
 				if (imgCounter == bgUrls.length-1){
 					console.log('reset imgCounter');
 					return imgCounter = 0;	
