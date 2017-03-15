@@ -36,28 +36,37 @@ li{
 	margin-bottom: 30px;
 
 }
-
-.skills-section{
-	text-align: center;
+.cv-subsection{
+	text-align: center;	
 	border: 1px dashed grey;
 	padding: 10px 20px;
+}
+
+
+.skills-section{
 	width: 25%;
 }
 
+
 #experience{
-	width: 45%;
+	width: 30%;
 	display: block;
-}
-#experience-section{
-	text-align: center;
-	border: 1px dashed grey;
-	padding: 10px 20px;
 }
 .job-position{
 	font-style: italic;
 }
 
+
 #education{
-	width: 45%;
+	width: 30%;
 	display: block;
+}
+
+
+#awards{
+	width: 30%;
+	display: block;
+}
+.award-title{
+	font-style: italic;
 }
