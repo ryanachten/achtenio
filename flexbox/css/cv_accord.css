@@ -1,24 +1,16 @@
 * {
   box-sizing: border-box;
 }
-body {
-  color: #333;
-}
 ul {
   list-style: none;
   padding: 0;
 }
-.inner { /*ul .inner */
-  overflow: hidden;
-  display: none;
-}
 
-
-/*ul .inner.show {
-  display: block;
-}*/
-ul li {
-  margin: .5em 0;
+.accordion{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
 }
 
 .toggle {
@@ -32,3 +24,33 @@ ul li {
 .toggle:hover {
   background: rgba(0, 0, 0, 0.9);
 }
+
+.inner { /*ul .inner */
+  overflow: hidden;
+  display: none;
+}
+
+
+
+
+
+#skills-section{
+  border: 1px solid red;
+  width: 100%;
+}
+
+#experience-section{
+  border: 1px solid red;
+  width: 30%;
+}
+
+#education-section{
+  border: 1px solid red;
+  width: 30%;
+}
+
+#awards-section{
+  border: 1px solid red;
+  width: 30%;
+}
+
