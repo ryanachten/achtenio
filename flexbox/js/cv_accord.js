@@ -1,3 +1,8 @@
+/*
+ Based on simple jQuery Accordion by Brenden Palmer
+ https://codepen.io/brenden/pen/Kwbpyj
+*/
+
 $('.toggle').click(function(e) {
   	e.preventDefault();
   
