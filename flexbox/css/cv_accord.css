@@ -31,13 +31,22 @@ ul {
 }
 
 
-
-
+/*Flexbox styles*/
 
 #skills-section{
   border: 1px solid red;
   width: 100%;
 }
+#skills-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+.skills-item{
+  width: 20%;
+}
+
 
 #experience-section{
   border: 1px solid red;
