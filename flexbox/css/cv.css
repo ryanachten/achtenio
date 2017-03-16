@@ -26,6 +26,13 @@ ul{
 li{
 	list-style: none;
 }
+.accordion{
+	font-size: 48px;
+}
+.accordion-panel-inactive{
+	display: none;
+}
+
 
 .cv-section{
 	width: 100%;
@@ -41,9 +48,6 @@ li{
 	border: 1px dashed grey;
 	padding: 10px 20px;
 }
-
-
-
 
 #experience{
 	display: block;
@@ -110,3 +114,4 @@ li{
 	}
 
 }
+

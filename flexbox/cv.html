@@ -31,21 +31,22 @@
 		</header>
 		
 		<section id="skills" class="cv-section">
+		
 			<h2 class="section-header">Skills</h2>
 			<section id="static" class="skills-section cv-subsection">
-				<h2>Static</h2>
-				<h3>~Fields~</h3>
-				<ul>
-					<li>Graphic Design</li>
-					<li>Branding</li>
-					<li>Illustration</li>
-				</ul>
-				<h3>~Software~</h3>
-				<ul>
-					<li>Photoshop</li>
-					<li>Illustrator</li>
-					<li>InDesign</li>
-				</ul>
+			<h2>Static</h2>
+			<h3>~Fields~</h3>				
+			<ul>
+				<li>Graphic Design</li>
+				<li>Branding</li>
+				<li>Illustration</li>
+			</ul>
+			<h3>~Software~</h3>
+			<ul>
+				<li>Photoshop</li>
+				<li>Illustrator</li>
+				<li>InDesign</li>
+			</ul>
 			</section>
 			<section id="motion" class="skills-section cv-subsection">
 				<h2>Motion</h2>
@@ -173,4 +174,16 @@
 		</nav>
 	</footer>
 </body>
+	<script type="text/javascript">
+		var accordions = $(".accordion");
+
+		for (var i = 0; i < accordions.length; i++){
+	
+			accordions[i].onclick = function(){
+				var accList = $(".accordion-panel").toggleClass("accordion-panel-inactive");
+			}
+		}	
+
+
+	</script>
 </html>
