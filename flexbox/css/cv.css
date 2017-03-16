@@ -43,32 +43,53 @@ li{
 }
 
 
-.skills-section{
-	width: 25%;
-}
 
 
 #experience{
-	width: 30%;
 	display: block;
 }
 .job-position{
 	font-style: italic;
 }
 
-
 #education{
-	width: 30%;
 	display: block;
 }
 
-
 #awards{
-	width: 30%;
 	display: block;
 }
 .award-title{
 	font-style: italic;
+}
+
+
+/*Breakpoints*/
+@media screen and (max-width: 600px){
+	.skills-section{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 600px){
+	.skills-section{
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 800px){
+	.skills-section{
+		width: 25%;
+	}
+	#experience{
+		width: 50%;
+	}	
+	#education{
+		width: 50%;
+	}
+	#awards{
+		width: 100%;
+	}	
 }
 
 @media screen and (min-width: 1200px){
@@ -77,4 +98,15 @@ li{
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	#experience{
+		width: 30%;
+	}	
+	#education{
+		width: 30%;
+	}
+	#awards{
+		width: 30%;
+	}
+
 }
