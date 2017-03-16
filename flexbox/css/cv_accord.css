@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #333;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.inner { /*ul .inner */
+  overflow: hidden;
+  display: none;
+}
+
+
+/*ul .inner.show {
+  display: block;
+}*/
+ul li {
+  margin: .5em 0;
+}
+
+.toggle {
+  width: 100%;
+  display: block;
+  background: rgba(0, 0, 0, 0.78);
+  color: #fefefe;
+  padding: .75em;
+  transition: background .3s ease;
+}
+.toggle:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
