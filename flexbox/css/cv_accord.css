@@ -11,33 +11,41 @@ ul {
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
 }
 
 .toggle {
   width: 100%;
   display: block;
-  background: rgba(0, 0, 0, 0.78);
-  color: #fefefe;
+  border: 1px dashed grey;
+  /*background: rgba(254, 254, 254, 0.5);*/
+  /*color: #fefefe;*/
   padding: .75em;
   transition: background .3s ease;
+  margin: 0;
 }
 .toggle:hover {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(254, 254, 254, 0.7);
 }
 
 .inner { /*ul .inner */
   overflow: hidden;
   display: none;
+
 }
 
 
 /*Flexbox styles*/
 
 #skills-section{
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   width: 100%;
+  margin-bottom: 30px;
 }
 #skills-container{
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -45,21 +53,20 @@ ul {
 }
 .skills-item{
   width: 20%;
+  margin-bottom: 10px;
 }
 
 
-#experience-section{
-  border: 1px solid red;
+#experience-section, #education-section, #awards-section{
+  /*border: 1px dashed grey;*/
   width: 30%;
+  margin-bottom: 30px;
 }
 
-#education-section{
-  border: 1px solid red;
-  width: 30%;
-}
 
-#awards-section{
-  border: 1px solid red;
-  width: 30%;
+@media screen and (max-width: 500px){
+  .skills-item, #experience-section, 
+  #education-section, #awards-section{
+    width: 100%;
+  }
 }
-
