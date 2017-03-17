@@ -39,7 +39,7 @@ function carousel(projects){
 
 	function changeProject(){
 		
-		header.fadeTo("slow", 0, function(){
+		header.fadeTo("slow", 0, "swing", function(){
 			changeText();
 			header.css('background-image', bgUrls[projCounter]);
 			header.fadeTo("slow", 1);
