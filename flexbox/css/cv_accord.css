@@ -20,8 +20,6 @@ ul {
   width: 100%;
   display: block;
   border: 1px dashed grey;
-  /*background: rgba(254, 254, 254, 0.5);*/
-  /*color: #fefefe;*/
   padding: .75em;
   transition: background .3s ease;
   margin: 0;
@@ -45,18 +43,26 @@ ul {
   min-width: 200px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 #cv-overview{
   margin-bottom: 30px;
+}
+#cv-overview h1{
+  margin-bottom: 30px;
+}
+#cv-overview p{
+  text-align: center;
+  font-family: 'Libre Baskerville', cursive;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 
 /*Flexbox styles*/
 
 #skills-section{
-  /*border: 1px solid red;*/
   width: 100%;
   margin-bottom: 30px;
 }
@@ -68,7 +74,7 @@ ul {
   text-align: center;
 }
 .skills-item{
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .inner hr{
@@ -76,7 +82,6 @@ ul {
 }
 
 #experience-section, #education-section, #awards-section{
-  /*border: 1px dashed grey;*/
   width: 30%;
   margin-bottom: 30px;
 }
@@ -104,6 +109,7 @@ ul {
   }
 
 @media screen and (min-width: 1200px){
+
   .skills-item{
      width: 20%;
   }
@@ -113,3 +119,4 @@ ul {
     margin-left: auto;
     margin-right: auto;
   }
+}
