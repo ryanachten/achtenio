@@ -7,7 +7,7 @@ $(document).ready(function(){
     var width = $(window).width(); 
     console.log('width: ' + width);
     
-    if (width < 500){
+    if (width < 1200){
         console.log('close accordion');
     }else{
         // TODO: the function below is a hack. Fix properly
