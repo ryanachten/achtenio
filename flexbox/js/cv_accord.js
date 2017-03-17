@@ -8,14 +8,15 @@ $(document).ready(function(){
     console.log('width: ' + width);
     
     if (width < 1200){
-        console.log('close accordion');
+        // console.log('close accordion');
     }else{
         // TODO: the function below is a hack. Fix properly
+        console.log('open accordion by default');
         $('.toggle').each(function(){
             var $this = $(this);
             var curId = $this.next().attr('id');
             if (curId !== "skills-container"){
-                console.log(curId);
+                // console.log(curId);
                  toggleAccordian($this);
             }
         });
