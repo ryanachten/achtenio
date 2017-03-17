@@ -27,13 +27,29 @@ ul {
   margin: 0;
 }
 .toggle:hover {
-  background: rgba(254, 254, 254, 0.7);
+  border: 1px solid grey;
+  background: rgba(254, 254, 254, 0.5);
 }
 
-.inner { /*ul .inner */
+.inner {
   overflow: hidden;
   display: none;
+  padding-right: 20px;
+  padding-left: 20px;
+}
 
+/*CV Styles*/
+#header-img img{
+  display: block;
+  width: 10%;
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+#cv-overview{
+  margin-bottom: 30px;
 }
 
 
@@ -52,10 +68,12 @@ ul {
   text-align: center;
 }
 .skills-item{
-  width: 20%;
   margin-bottom: 10px;
 }
 
+.inner hr{
+  width: 50%;
+}
 
 #experience-section, #education-section, #awards-section{
   /*border: 1px dashed grey;*/
@@ -63,10 +81,35 @@ ul {
   margin-bottom: 30px;
 }
 
+/*Breakpoints styles*/
 
 @media screen and (max-width: 500px){
-  .skills-item, #experience-section, 
-  #education-section, #awards-section{
+  .skills-item{
+    width: 80%;
+  }
+
+  #experience-section, #education-section, 
+  #awards-section{
     width: 100%;
   }
 }
+
+@media screen and (min-width: 500px){
+  .skills-item{
+    width: 40%;
+  }
+  #experience-section, #education-section, 
+  #awards-section{
+    width: 100%;
+  }
+
+@media screen and (min-width: 1200px){
+  .skills-item{
+     width: 20%;
+  }
+
+  .accordion{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
