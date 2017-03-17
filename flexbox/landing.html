@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ryan/Achten</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>R/A</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Kumar+One|Libre+Baskerville|Roboto" rel="stylesheet">
 	<!-- CSS -->
@@ -10,27 +10,38 @@
 	/normalize.css/5.0.0/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/landing.css">
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js"></script>
 	<!-- Scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-	<div class="container">
-		<div id="header-img">
-			<img src="img/achtenio_somalogo.png" alt="Ryan Achten Logo">
+	<div>
+		<div class="overlay">
+			<div id="header-img">
+				<img src="img/achtenio_somalogo.png" alt="Ryan Achten Logo">
+			</div>
+			<header>
+				<nav id="top-nav">
+					<a class="nav-link nav-ra-logo" href="">ryan/achten</a>
+					<a class="nav-link" href="work.html">work</a>
+					<a class="nav-link" href="about.html">bio</a> 
+					<a class="nav-link" href="cv_accord.html">cv</a> 
+				</nav>
+				<!-- <hr class="nav-seperator"> -->
+			</header>
 		</div>
-		<!-- <div id="button-hold"> -->
-			<!-- <a class="text-button" href="work.html">View Work</a> -->
-		<!-- </div> -->
-		<header>
-			<nav id="top-nav">
-				<a class="nav-link nav-ra-logo" href="">ryan/achten</a>
-				<a class="nav-link" href="work.html">work</a>
-				<a class="nav-link" href="about.html">bio</a> 
-				<a class="nav-link" href="cv_accord.html">cv</a> 
-			</nav>
-			<!-- <hr class="nav-seperator"> -->
-	</header>
-	</div>
+		<div id="container"><br /><br /><br /><br /><br />Generating world...
+		</div>
+
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js"></script>
+			<script src="js/threejs/FirstPersonControls.js"></script>
+			<script src="js/threejs/ImprovedNoise.js"></script>
+			<script src="js/threejs/Detector.js"></script>
+			<script src="js/threejs/stats.min.js"></script>
+
+			<script src="js/landing_FogTest.js"></script>
+
+		
+		</div>
+	
 </body>
 </html>
