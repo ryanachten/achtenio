@@ -46,6 +46,19 @@ ul {
   margin-bottom: 40px;
 }
 
+h3{
+  font-family: 'Libre Baskerville', cursive;
+  font-weight: 100;
+}
+h4{
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.award-title, .job-position{
+  font-style: italic;
+}
+
 #cv-overview{
   margin-bottom: 30px;
 }
