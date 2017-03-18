@@ -1,0 +1,160 @@
+/**{
+	border: 1px solid red !important; 
+}*/
+
+.work-overview{
+	text-align: center;
+	margin-bottom: 30px;
+	padding-top: 10px;
+}
+.work-overview{
+	padding: 10px; 
+}
+
+.container{
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+/*Hero project cover*/
+.project-header{
+	width: 100%;
+	height: 400px;
+	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/0773db44228025.580c5b7479cb6.png);
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 20px;
+}
+.project-header-descript{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.7);
+	background-size: cover;
+	padding: 15px;
+	padding-top: 25px;
+	text-align: center;
+}
+.project-header-descript h1{
+	font-size: 2.5em;
+	line-height: 1.5em;
+}
+.project-header-descript h2{
+	font-size: 1.5em;
+	margin-top: 10px;
+}
+#header-seperator{
+	border: 1px dashed grey;
+}
+.project-header-descript .pullquote{
+	font-size: 0.8em;
+	line-height: 2em;
+}
+
+
+/*General project covers*/
+.project-cover{
+	opacity: 0;
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 20px;
+}
+.rollover{
+
+	display: none;
+}
+.rollover-active{
+	animation: fadein 2s ease;
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(255,255,255,0.7);
+	padding: 10% 5%;
+	overflow-y: auto;
+	vertical-align: middle;
+}
+.rollover h1{
+	font-size: 3em;
+	margin-bottom: 5px;
+}
+.rollover h1{
+	font-size: 2em;
+	margin-bottom: 5px;
+}
+.rollover .pullquote{
+	font-size: 1em;
+	margin-top: 0px;
+}
+#project9{
+	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/0773db44228025.580c5b7479cb6.png);
+}#project8{
+	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2672f246479293.5856220a8906e.jpg);
+}#project7{
+	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/c6b1ab33085305.569f5a24623a4.jpg);
+}#project6{
+	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/3525ba31454845.5652c2844e3bc.jpg);
+}#project5{
+	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/69e1e025002761.5633db351b369.jpg);	
+}#project4{
+	background-image: url(https://mir-s3-cdn-cf.behance.net/projects/original/21053901.5461878594fcf.jpg);
+}#project3{
+	background-image: url(https://mir-s3-cdn-cf.behance.net/projects/original/17953035.548d372c3bee8.jpg);	
+}#project2{
+	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0e0ace16942195.562b3648305ca.png);
+}#project1{
+	background-image: url(https://mir-s3-cdn-cf.behance.net/projects/original/15783425.548a0eb1cc888.jpg);	
+}
+
+
+/*Breakpoints*/
+@media screen and (max-width: 600px){
+	.project-cover{
+		width: 100%;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
+@media screen and (min-width: 600px){
+	.project-cover{
+		width: 45%;
+	}
+}
+
+@media screen and (min-width: 800px){
+	.project-cover{
+		height: 300px;
+	}
+	.project-header-descript{
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	.project-cover{
+		height: 350px;
+		margin-bottom: 30px;
+	}
+	.project-header{
+		margin-bottom: 30px;
+	}
+	.project-header-descript{
+		width: 30%;
+	}
+	.container{
+		width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
