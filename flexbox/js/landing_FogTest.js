@@ -61,7 +61,7 @@ via https://github.com/mrdoob/three.js/blob/master/examples/webgl_geometry_terra
 				scene.add( mesh );
 
 				renderer = new THREE.WebGLRenderer();
-				renderer.setClearColor( 0xefd1b5 );
+				renderer.setClearColor( 0xefd1b5 ); //#f9f5ef
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.setSize( window.innerWidth, window.innerHeight );
 
@@ -142,6 +142,11 @@ via https://github.com/mrdoob/three.js/blob/master/examples/webgl_geometry_terra
 
 					shade = vector3.dot( sun );
 
+					// imageData[ i ] = ( 96 + shade * 128 ) * ( 0.5 + data[ j ] * 0.007 );
+					// imageData[ i + 1 ] = ( 32 + shade * 96 ) * ( 0.5 + data[ j ] * 0.007 );
+					// imageData[ i + 2 ] = ( shade * 96 ) * ( 0.5 + data[ j ] * 0.007 );
+
+					
 					imageData[ i ] = ( 96 + shade * 128 ) * ( 0.5 + data[ j ] * 0.007 );
 					imageData[ i + 1 ] = ( 32 + shade * 96 ) * ( 0.5 + data[ j ] * 0.007 );
 					imageData[ i + 2 ] = ( shade * 96 ) * ( 0.5 + data[ j ] * 0.007 );
