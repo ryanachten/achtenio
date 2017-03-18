@@ -1,0 +1,11 @@
+.env
+tools/phing-metadata
+silverstripe-cache
+.buildpath
+.project
+.settings
+.idea
+.DS_Store
+vendor/
+# Don't include the forum module, as this will be installed with composer
+forum```
