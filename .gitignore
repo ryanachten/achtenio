@@ -9,3 +9,5 @@ silverstripe-cache
 vendor/
 # Don't include the forum module, as this will be installed with composer
 forum```
+
+_ss_environment.php
