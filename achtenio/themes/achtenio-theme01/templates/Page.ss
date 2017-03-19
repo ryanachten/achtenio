@@ -11,6 +11,7 @@
 	<% include MainNav %>
 
 	$Layout
+	$Form
 	
 	<% include Footer %>
 </body>
