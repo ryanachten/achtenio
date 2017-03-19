@@ -57,7 +57,7 @@
 
 /*General project covers*/
 .project-cover{
-	opacity: 0;
+	/*opacity: 0;*/ /*Disabled during SS setup*/
 	height: 200px;
 	background-size: cover;
 	background-position: center;
@@ -152,7 +152,6 @@
 		margin-right: auto;
 	}
 }
-
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
