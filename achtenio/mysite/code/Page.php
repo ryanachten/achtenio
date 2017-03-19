@@ -35,7 +35,7 @@ class Page_Controller extends ContentController {
 		Requirements::css("https://fonts.googleapis.com/css?family=Kumar+One|Libre+Baskerville|Roboto");
 		Requirements::css("https://necolas.github.io/normalize.css/5.0.0/normalize.css");
 		Requirements::css($this->ThemeDir()."/css/main.css");
-		Requirements::css("https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js");
+		Requirements::javascript("https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js");
 	}
 
 }
