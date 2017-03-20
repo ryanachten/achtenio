@@ -47,7 +47,16 @@ header .nav-seperator{
 }
 .project-section{
 	margin-bottom: 30px;
+	/*background-color: red;*/
 }
+div.captionImage.center{
+	display: block;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
 .video-embed{
 	position: relative;
 	width: 60%;
