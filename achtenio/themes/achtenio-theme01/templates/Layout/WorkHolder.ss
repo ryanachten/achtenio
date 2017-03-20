@@ -28,8 +28,9 @@
 			<div id="project9" class="project-cover">
 				<div class="rollover">
 					<h1>$Title</h1>
-					<h2>3D Archive Interface</h2>
-					<p class="pullquote">Victoria University of Wellington, 2016. Submitted to the Victoria University of Wellington in fulfilment of the requirements for the degree of Master of Design Innovation.</p>
+					<h2>$Subtitle</h2>
+					<p>$Date.Nice | $Client</p>
+					<p class="pullquote">$Teaser</p>
 					<a class="text-button" href="$Link">Read More</a>
 				</div>
 			</div>
