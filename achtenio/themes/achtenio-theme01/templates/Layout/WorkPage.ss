@@ -3,7 +3,7 @@
 </head>
 <body>
 	<main class="container">
-		<header id="project-header">
+		<header id="project-header" style="background-image:url($HeaderImage.Filename);">
 			<div>
 				<h1 id="project-title">$Title</h1>
 				<hr class="content-seperator">
