@@ -55,9 +55,9 @@ function carousel(projects){
 		}	
 	}
 	function changeText(){
-		var projHeader = rollovers[projCounter].children[0].innerText;
-		var projSubhead = rollovers[projCounter].children[1].innerText;
-		var projDescript = rollovers[projCounter].children[2].innerText;
+		var projHeader = rollovers[projCounter].querySelector("h1").innerText;
+		var projSubhead = rollovers[projCounter].querySelector("h2").innerText;
+		var projDescript = rollovers[projCounter].querySelector(".pullquote").innerText;
 
 		var headerDescript = $(".project-header-descript");
 		headerDescript.children('h1').text(projHeader);
