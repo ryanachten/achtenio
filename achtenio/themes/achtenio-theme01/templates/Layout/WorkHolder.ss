@@ -24,8 +24,8 @@
 
 		<!-- Project gallery tiles -->
 		<% loop $Children %>
-
-			<div id="project9" class="project-cover" style="background-image:url($HeaderImage.Filename);">
+			<!-- id="project9" -->
+			<div class="project-cover" style="background-image:url($HeaderImage.Filename);">
 				<div class="rollover">
 					<h1>$Title</h1>
 					<h2>$Subtitle</h2>

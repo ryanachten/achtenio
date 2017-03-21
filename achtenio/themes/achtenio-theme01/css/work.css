@@ -57,7 +57,7 @@
 
 /*General project covers*/
 .project-cover{
-	/*opacity: 0;*/ /*Disabled during SS setup*/
+	opacity: 0; /*Disabled during SS setup*/
 	height: 200px;
 	background-size: cover;
 	background-position: center;

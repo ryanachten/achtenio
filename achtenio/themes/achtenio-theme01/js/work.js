@@ -5,8 +5,10 @@ carousel(projects);
 
 function projectFadeIn(projects){	
 	for (var i=0; i < projects.length; i++){
-		var curProjectId = '#' + projects[i].getAttribute('id');
-		$(curProjectId).delay(1000*i).fadeTo("slow", 1);
+		// var curProjectId = '#' + projects[i].getAttribute('id');
+		var curObj = projects[i];
+		// console.log(curObj);
+		$(curObj).delay(1000*i).fadeTo("slow", 1);
 	}
 }
 
@@ -28,8 +30,8 @@ function carousel(projects){
 	var rollovers = [];
 
 	for (var i=0; i < projects.length; i++){
-		var curProjectId = '#' + projects[i].getAttribute('id');
-		bgUrls.push( $(curProjectId).css('background-image'));
+		// var curProjectId = '#' + projects[i].getAttribute('id');
+		bgUrls.push( $(projects[i]).css('background-image'));
 		rollovers.push(projects[i].children[0]);
 	}
 
