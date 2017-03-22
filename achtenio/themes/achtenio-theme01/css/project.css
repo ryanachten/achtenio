@@ -48,7 +48,14 @@ header .nav-seperator{
 	margin-bottom: 30px;
 	/*background-color: red;*/
 }
-div.captionImage.center{
+.project-section img{
+	display: block;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.project-content{
 	display: block;
 	width: 80%;
 	margin-right: auto;
