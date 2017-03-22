@@ -16,10 +16,10 @@
 			'HeaderImage' => 'Image'
 
 		);
-		
 
 		public function getCMSFields(){
 			$fields = parent::getCMSFields();
+
 			$fields->addFieldToTab('Root.Main', TextField::create('Subtitle'), 'Content');
 			$fields->addFieldToTab('Root.Main', DateField::create('Date', 'Date of project')
 				->setConfig('showcalendar', true)
