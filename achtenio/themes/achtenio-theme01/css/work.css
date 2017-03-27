@@ -16,7 +16,9 @@
 	display: -webkit-flex;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 /*Hero project cover*/
@@ -26,7 +28,7 @@
 	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/0773db44228025.580c5b7479cb6.png);
 	background-size: cover;
 	background-position: center;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 .project-header-descript{
 	display: inline-block;
@@ -61,7 +63,7 @@
 	height: 200px;
 	background-size: cover;
 	background-position: center;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 .rollover{
 
@@ -103,12 +105,13 @@
 
 @media screen and (min-width: 600px){
 	.project-cover{
-		width: 45%;
+		width: 48%;
 	}
 }
 
 @media screen and (min-width: 800px){
 	.project-cover{
+		width: 32%;
 		height: 300px;
 	}
 	.project-header-descript{
@@ -119,10 +122,10 @@
 @media screen and (min-width: 1200px){
 	.project-cover{
 		height: 350px;
-		margin-bottom: 30px;
+		/*margin-bottom: 30px;*/
 	}
 	.project-header{
-		margin-bottom: 30px;
+		/*margin-bottom: 30px;*/
 	}
 	.project-header-descript{
 		width: 30%;
