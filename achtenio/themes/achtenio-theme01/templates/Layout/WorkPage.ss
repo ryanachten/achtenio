@@ -26,8 +26,8 @@
 				<% loop $WorkSections %>
 
 					<figure class="project-section img-section">
-						$Photo <!-- Not sure I really want this spec -->
-						<figcaption>$Title</figcaption>
+						$Photo
+						<figcaption>$Description</figcaption>
 					</figure>
 
 				<% end_loop %>
