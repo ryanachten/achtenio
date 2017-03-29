@@ -14,7 +14,10 @@
 
 		private static $has_one = array(
 			'HeaderImage' => 'Image'
+		);
 
+		private static $has_many = array(
+			'WorkSections' => 'WorkSection'
 		);
 
 		public function getCMSFields(){
@@ -30,6 +33,14 @@
 
 			$fields->addFieldToTab('Root.Attachments', $headerImage = UploadField::create('HeaderImage'));
 				$headerImage->setFolderName('project-content/header-images');
+
+			// Has_many fields
+			$fields->addFieldToTab('Root.WorkSections', GridField::create(
+				'WorkSections',
+				'Project Sections',
+				$this->WorkSections(),
+				GridFieldConfig_RecordEditor::create()
+			));
 
 			return $fields;
 		}
