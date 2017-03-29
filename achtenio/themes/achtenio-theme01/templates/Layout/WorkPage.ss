@@ -22,6 +22,17 @@
 				$Content
 			</div>
 
+			<div class="project-section text-section">
+				<% loop $WorkSections %>
+
+					<figure class="project-section img-section">
+						$Photo <!-- Not sure I really want this spec -->
+						<figcaption>$Title</figcaption>
+					</figure>
+
+				<% end_loop %>
+			</div>
+
 			<section id="behance-hook">
 				<p>View the <span id="hook-logo">vertice</span> project on Behance for more information:</p>
 				<a class="text-button" href="$Behance">View on Behance</a>
