@@ -25,16 +25,21 @@
 			<div class="project-section text-section">
 				<% loop $WorkSections %>
 
-					<figure class="project-section img-section">
-						$Photo
-						<figcaption>$Description</figcaption>
-					</figure>
-
+					<% if $Photo %>
+						<figure class="project-section img-section">
+							$Photo
+							<figcaption>$Description</figcaption>
+						</figure>
+					<% else_if $Video %>
+						<div class="video-embed" >
+							<iframe src="https://player.vimeo.com/video/$Video" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						</div>
+					<% end_if %>
 				<% end_loop %>
 			</div>
 
 			<section id="behance-hook">
-				<p>View the <span id="hook-logo">vertice</span> project on Behance for more information:</p>
+				<p>View the <span id="hook-logo">$Title</span> project on Behance for more information:</p>
 				<a class="text-button" href="$Behance">View on Behance</a>
 			</section>
 	</main>
