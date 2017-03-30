@@ -4,6 +4,7 @@
 		private static $db = array(
 			'Title' => 'Varchar',
 			'Description' => 'Text',
+			'Video' => 'Varchar'
 		);
 
 		private static $has_one = array(
@@ -29,6 +30,7 @@
 			$fields = FieldList::create(
 				TextField::create('Title'),
 				TextareaField::create('Description'),
+				TextField::create('Video', 'Vimeo Video ID'),
 				$uploader = UploadField::create('Photo')
 			);
 
