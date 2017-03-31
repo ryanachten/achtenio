@@ -57,7 +57,7 @@ function carousel(projects){
 	function changeText(){
 		var projHeader = rollovers[projCounter].querySelector("h1").innerText;
 		var projSubhead = rollovers[projCounter].querySelector("h2").innerText;
-		var projDescript = rollovers[projCounter].querySelector(".pullquote").innerText;
+		var projDescript = rollovers[projCounter].querySelector(".teaser").innerText;
 		var behanceLink = rollovers[projCounter].querySelector("a").getAttribute("href");
 
 		var headerDescript = $(".project-header-descript");
