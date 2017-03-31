@@ -30,7 +30,7 @@
 				$Content
 			</div>
 
-			<div class="project-section text-section">
+			<div class="project-section">
 				<% loop $WorkSections %>
 
 					<% if $Photo %>
