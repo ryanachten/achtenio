@@ -20,15 +20,12 @@ header .nav-seperator{
 	align-items: center;	
 }
 #project-header > div{
-	width: 100%;
+	padding-top: 40px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;    
+    background-color: rgba(249, 245, 239, 0.75);
 	text-align: center;
-}
-#project-title, #project-subtitle{
-	color: #f9f5ef;
-}
-.content-seperator{
-	border: 1px dashed #f9f5ef;
-	width: 40%;
 }
 
 /*Project Content*/
@@ -36,8 +33,12 @@ header .nav-seperator{
 	text-align: center;
 	width: 50%;
 	margin: 30px auto;
-	padding: 10px;
+	padding: 20px;
 	border: 1px dashed grey;
+}
+
+#project-overview .pullquote{
+	font-size: 1em;
 }
 
 .project-categories p{
@@ -58,8 +59,12 @@ header .nav-seperator{
 
 /*Project Content Styles*/
 .project-content{
+	display: block;
 	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
 }
+
 .project-section{
 	margin-bottom: 30px;
 	/*background-color: red;*/
@@ -70,14 +75,9 @@ header .nav-seperator{
 	margin-right: auto;
 	margin-left: auto;
 }
-
-.project-content{
-	display: block;
-	width: 80%;
-	margin-right: auto;
-	margin-left: auto;
+.project-section a{
+	color: #eb4c7e;
 }
-
 
 .video-embed{
 	position: relative;

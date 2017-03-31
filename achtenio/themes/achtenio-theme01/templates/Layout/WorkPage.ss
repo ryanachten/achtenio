@@ -6,14 +6,13 @@
 		<header id="project-header" style="background-image:url($HeaderImage.Filename);">
 			<div>
 				<h1 id="project-title">$Title</h1>
-				<hr class="content-seperator">
 				<h2 id="project-subtitle">$Subtitle</h2>
 			</div>
 		</header>
 	
 		<div id="project-overview">
+			<p class="pullquote">$Teaser</p>
 			<p>$Date.Nice | $Client</p>
-			<p>$Teaser</p>
 			<div class="project-categories">
 				<p>Categories: </p>
 				<ul>
