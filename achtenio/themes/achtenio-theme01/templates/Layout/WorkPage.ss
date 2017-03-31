@@ -14,6 +14,14 @@
 		<div id="project-overview">
 			<p>$Date.Nice | $Client</p>
 			<p>$Teaser</p>
+			<div class="project-categories">
+				<p>Categories: </p>
+				<ul>
+					<% loop $Categories %>
+						<li>$Title<% if not $Last %>, <% end_if %></li>
+					<% end_loop %>
+				</ul>
+			</div>
 		</div>
 	
 		<div class="project-content">
