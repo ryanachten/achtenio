@@ -20,6 +20,16 @@
 			'WorkSections' => 'WorkSection'
 		);
 
+		private static $many_many = array(
+			'Categories' => 'WorkCategory'
+		);
+
+		public function CategoriesList(){
+			if($this->Categories()->exists()){
+				return implode(', ', $this->Categories()->column('Title'));
+			}
+		}
+
 		public function getCMSFields(){
 			$fields = parent::getCMSFields();
 
@@ -40,6 +50,13 @@
 				'Project Sections',
 				$this->WorkSections(),
 				GridFieldConfig_RecordEditor::create()
+			));
+
+			// Many_many fields
+			$fields->addFieldToTab('Root.Categories', CheckboxSetField::create(
+				'Categories',
+				'Selected categories',
+				$this->Parent()->Categories()->map('ID','Title')
 			));
 
 			return $fields;
