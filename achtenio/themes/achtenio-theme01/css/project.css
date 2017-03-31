@@ -40,6 +40,22 @@ header .nav-seperator{
 	border: 1px dashed grey;
 }
 
+.project-categories p{
+	display: inline;
+}
+
+.project-categories ul{
+	display: inline;
+	list-style: none;
+	padding: 0px;
+	text-align: center;
+}
+
+.project-categories li{
+	display: inline;
+    font-style: italic;
+}
+
 /*Project Content Styles*/
 .project-content{
 	width: 80%;
