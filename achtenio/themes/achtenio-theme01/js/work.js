@@ -58,10 +58,13 @@ function carousel(projects){
 		var projHeader = rollovers[projCounter].querySelector("h1").innerText;
 		var projSubhead = rollovers[projCounter].querySelector("h2").innerText;
 		var projDescript = rollovers[projCounter].querySelector(".pullquote").innerText;
+		var behanceLink = rollovers[projCounter].querySelector("a").getAttribute("href");
 
 		var headerDescript = $(".project-header-descript");
 		headerDescript.children('h1').text(projHeader);
 		headerDescript.children('h2').text(projSubhead);
 		headerDescript.children('p').text(projDescript);
+		headerDescript.children('a')[0].setAttribute("href", behanceLink);
+		// console.log(headerDescript.children('a')[0].getAttribute("href"));
 	}
 }

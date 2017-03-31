@@ -18,7 +18,7 @@
 				<h2>3D Archive Interface</h2>
 				<hr id="header-seperator">
 				<p class="pullquote">Victoria University of Wellington, 2016. Submitted to the Victoria University of Wellington in fulfilment of the requirements for the degree of Master of Design Innovation.</p>
-				<a class="text-button" href="project.html">Read More</a>
+				<a class="text-button" href="/achtenio/work/vertice">Read More</a>
 			</div>
 		</div>
 
