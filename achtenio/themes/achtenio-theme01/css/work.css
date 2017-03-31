@@ -81,15 +81,15 @@
 	vertical-align: middle;
 }
 .rollover h1{
-	font-size: 3em;
-	margin-bottom: 5px;
-}
-.rollover h1{
 	font-size: 2em;
+	margin-bottom: 0px;
+}
+.rollover h2{
+	margin-top: 0px;
 	margin-bottom: 5px;
 }
-.rollover .pullquote{
-	font-size: 1em;
+.rollover p{
+	line-height: 1.5em;
 	margin-top: 0px;
 }
 

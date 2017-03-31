@@ -29,7 +29,7 @@
 					<h1>$Title</h1>
 					<h2>$Subtitle</h2>
 					<p>$Date.Nice | $Client</p>
-					<p class="pullquote">$Teaser</p>
+					<p class="teaser">$Teaser</p>
 					<a class="text-button" href="$Link">Read More</a>
 				</div>
 			</div>
