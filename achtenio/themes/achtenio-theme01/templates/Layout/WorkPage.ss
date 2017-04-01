@@ -12,9 +12,10 @@
 	
 		<div id="project-overview">
 			<p class="pullquote">$Teaser</p>
-			<p>$Date.Nice | $Client</p>
+			<hr>
+			<p id="project-dateclient">$Date.Nice | <strong>$Client</strong></p>
 			<div class="project-categories">
-				<p>Categories: </p>
+				<p><strong>Categories</strong>:</p>
 				<ul>
 					<% loop $Categories %>
 						<li>$Title<% if not $Last %>, <% end_if %></li>
@@ -44,7 +45,6 @@
 					<% end_if %>
 				<% end_loop %>
 			</div>
-
 			<section id="behance-hook">
 				<p>View the <span id="hook-logo">$Title</span> project on Behance for more information:</p>
 				<a class="text-button" href="$Behance">View on Behance</a>

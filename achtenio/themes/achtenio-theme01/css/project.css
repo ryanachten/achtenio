@@ -44,11 +44,20 @@ header .nav-seperator{
 #project-overview .pullquote{
 	font-size: 1em;
 }
+#project-dateclient{
+	font-size: 0.9em;
+	margin-bottom: 0px;
+}
 
+.project-categories{
+	font-size: 0.8em;
+}
 .project-categories p{
 	display: inline;
 }
-
+.project-categories strong{
+	text-decoration: underline;
+}
 .project-categories ul{
 	display: inline;
 	list-style: none;
