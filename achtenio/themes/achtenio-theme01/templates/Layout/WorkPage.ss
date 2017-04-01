@@ -33,7 +33,7 @@
 				<% loop $WorkSections %>
 
 					<% if $Photo %>
-						<figure class="project-section img-section">
+						<figure class="img-section">
 							$Photo
 							<figcaption>$Description</figcaption>
 						</figure>
