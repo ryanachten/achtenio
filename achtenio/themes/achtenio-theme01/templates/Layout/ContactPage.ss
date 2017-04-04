@@ -10,11 +10,12 @@
 			Contact me using this form or via one of media channels listed at the bottom.<br>I'll get back to you as soon as I can</p>
 		</div>
 		<div class="contact-section">
-			<div id="contact-form">
+			<!-- <div class="contact-form">
 				<input type="text" name="Name" placeholder="Name*" class="form-field">
 				<input type="email" name="Email" placeholder="Email*" class="form-field">
 				<textarea name="Message" placeholder="Message*" class="form-field"></textarea>
 				<button type="submit" class="text-button">Send Message</button>
-			</div>
+			</div> -->
+			$ContactForm
 		</div>
 	</main>
