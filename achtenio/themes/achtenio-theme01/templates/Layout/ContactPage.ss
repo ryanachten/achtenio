@@ -7,7 +7,7 @@
 		<div class="contact-section">
 			<p id="contact-description">
 			<span class="pullquote">Got a project? Want to collaborate? Or want to grab a beer?</span><br>
-			Contact me using this form or via one of media channels listed at the bottom.<br>I'll get back to you as soon as I can</p>
+			Contact me using this form or via one of media channels listed at the bottom.</p>
 		</div>
 		<div class="contact-section">
 			<!-- <div class="contact-form">

@@ -46,7 +46,6 @@
 		public function submit($data, $form){
 			$email = new Email();
 
-			echo $data['Email'];
 			$email->setTo('ryanachten@gmail.com'); //prob should to change this to a site email address
 			$email->setFrom($data['Email']);
 			$email->setSubject("Contact Message from {$data["Name"]}");
@@ -57,10 +56,10 @@
 			";
 			$email->setBody($messageBody);
 			$email->send();
-			return array(
-				'Content' => '<p>Thank you for your feedback.</p>',
-				'Form' => ''
-			);
+			
+			$form->sessionMessage("Thanks for your message, I'll get back to you as soon as I can",'good');
+
+			return $this->redirectBack();
 		}
 	}
 ?>
