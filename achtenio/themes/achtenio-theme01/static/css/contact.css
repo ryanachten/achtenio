@@ -39,6 +39,10 @@
 	margin-bottom: 10px;
 	border: none;
 }
+#contact-description .pullquote{
+	font-size: 1.2em;
+	/*font-style: italic;*/
+}
 #contact-form textarea{
 	height: 100px;
 }
