@@ -14,6 +14,7 @@
 				<input type="text" name="Name" placeholder="Name*" class="form-field">
 				<input type="email" name="Email" placeholder="Email*" class="form-field">
 				<textarea name="Message" placeholder="Message*" class="form-field"></textarea>
+				<button type="submit" class="text-button">Send Message</button>
 			</div>
 		</div>
 	</main>

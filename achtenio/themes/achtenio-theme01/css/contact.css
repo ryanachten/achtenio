@@ -32,6 +32,7 @@
 	width: 50%;
 	margin-right: auto;
 	margin-left: auto;
+	text-align: center;
 }
 .form-field{
 	width: 100%;
@@ -46,7 +47,6 @@
 #contact-form textarea{
 	height: 100px;
 }
-
 
 
 /*Breakpoints*/
