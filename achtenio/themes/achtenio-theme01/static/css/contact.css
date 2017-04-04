@@ -1,0 +1,61 @@
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#header-img{
+	width: 100%;
+}
+#header-img img{
+	display: block;
+	width: 25%;
+	min-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contact-section{
+	width: 100%;
+}
+#contact-title{
+	margin-top: 50px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+#contact-description{
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+#contact-form{
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.form-field{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: none;
+}
+#contact-form textarea{
+	height: 100px;
+}
+
+
+
+/*Breakpoints*/
+@media screen and (max-width: 600px){
+	#contact-form, #contact-description{
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	.container{
+		width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
