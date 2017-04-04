@@ -9,5 +9,58 @@
 			parent::init();
 			Requirements::css($this->ThemeDir()."/css/contact.css");
 		}
+
+
+		private static $allowed_actions = array('ContactForm');
+
+
+		public function ContactForm() {
+			$form = Form::create(
+				$this,
+				__FUNCTION__,
+				FieldList::create(
+					TextField::create('Name','')
+						->setAttribute('placeholder','Name*')
+						->addExtraClass('form-field'),
+					EmailField::create('Email','')
+						->setAttribute('placeholder','Email*')
+						->addExtraClass('form-field'),
+					TextareaField::create('Message','')
+						->setAttribute('placeholder','Message*')
+						->addExtraClass('form-field')
+				),
+				FieldList::create(
+					FormAction::create('submit', 'Send Message') //submit needs to be the name of the pub function later
+						->setUseButtonTag(true)
+						->addExtraClass('text-button')
+				),
+				RequiredFields::create('Name','Email','Message')			
+			);
+
+			$form->addExtraClass('contact-form');
+
+			return $form;
+		}
+
+
+		public function submit($data, $form){
+			$email = new Email();
+
+			echo $data['Email'];
+			$email->setTo('ryanachten@gmail.com'); //prob should to change this to a site email address
+			$email->setFrom($data['Email']);
+			$email->setSubject("Contact Message from {$data["Name"]}");
+
+			$messageBody = "
+				<p><strong>Name:</strong> {$data['Name']}</p>
+				<p><strong>Message:</strong> {$data['Message']}</p>
+			";
+			$email->setBody($messageBody);
+			$email->send();
+			return array(
+				'Content' => '<p>Thank you for your feedback.</p>',
+				'Form' => ''
+			);
+		}
 	}
 ?>
