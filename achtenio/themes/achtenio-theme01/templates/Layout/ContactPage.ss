@@ -1,7 +1,3 @@
-<head>
-	<link rel="stylesheet" type="text/css" href="$ThemeDir/css/contact.css">
-</head>
-
 <main class="container">
 		<div id="header-img">
 			<img id="about-header-img" src="$ThemeDir/img/achtenio_somalogo.png" alt="Ryan Achten Logo">
