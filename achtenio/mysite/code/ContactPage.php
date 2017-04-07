@@ -10,12 +10,6 @@
 			Requirements::css($this->ThemeDir()."/css/contact.css");
 		}
 
-/*
-References:
-https://www.silverstripe.org/learn/lessons/introduction-to-frontend-forms?ref=hub
-https://docs.silverstripe.org/en/3/developer_guides/forms/how_tos/simple_contact_form/
-*/
-
 		private static $allowed_actions = array('ContactForm');
 
 		public function ContactForm() {
@@ -59,6 +53,12 @@ https://docs.silverstripe.org/en/3/developer_guides/forms/how_tos/simple_contact
 				<p><strong>Message:</strong> {$data['Message']}</p>
 			";
 			$email->setBody($messageBody);
+
+			echo($email->To());
+			echo($email->From());
+			echo($email->Subject());
+			echo($email->Body());
+
 			$email->send();
 
 			$form->sessionMessage("Thanks for your message, I'll get back to you as soon as I can",'good');
