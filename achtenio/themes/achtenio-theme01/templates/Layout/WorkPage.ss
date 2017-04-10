@@ -22,6 +22,14 @@
 					<% end_loop %>
 				</ul>
 			</div>
+			<div class="project-categories">
+				<p><strong>Software</strong>:</p>
+				<ul>
+					<% loop $Software %>
+						<li>$Title<% if not $Last %>, <% end_if %></li>
+					<% end_loop %>
+				</ul>
+			</div>
 		</div>
 	
 		<div class="project-content">
