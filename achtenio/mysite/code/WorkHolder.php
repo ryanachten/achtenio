@@ -4,7 +4,8 @@
 		private static $allowed_children = array('WorkPage');
 
 		private static $has_many = array(
-			'Categories' => 'WorkCategory'
+			'Categories' => 'WorkCategory',
+			'Software' => 'WorkSoftware'
 		);
 
 		public function getCMSFields(){
@@ -13,6 +14,12 @@
 				'Categories',
 				'Project categories',
 				$this->Categories(),
+				GridFieldConfig_RecordEditor::create()
+			));
+			$fields->addFieldToTab('Root.Software', GridField::create(
+				'Software',
+				'Project software',
+				$this->Software(),
 				GridFieldConfig_RecordEditor::create()
 			));
 

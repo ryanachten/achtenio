@@ -21,7 +21,8 @@
 		);
 
 		private static $many_many = array(
-			'Categories' => 'WorkCategory'
+			'Categories' => 'WorkCategory',
+			'Software' => 'WorkSoftware'
 		);
 
 		public function CategoriesList(){
@@ -57,6 +58,11 @@
 				'Categories',
 				'Selected categories',
 				$this->Parent()->Categories()->map('ID','Title')
+			));
+			$fields->addFieldToTab('Root.Software', CheckboxSetField::create(
+				'Software',
+				'Software used in project',
+				$this->Parent()->Software()->map('ID','Title')
 			));
 
 			return $fields;
