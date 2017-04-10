@@ -44,9 +44,9 @@
 		public function submit($data, $form){
 			$email = new Email();
 
-			$email->setTo('ryanachten@gmail.com'); //prob should to change this to a site email address
+			$email->setTo('rian.acton@yahoo.com'); //prob should to change this to a site email address
 			$email->setFrom($data['Email']);
-			$email->setSubject("Contact Message from {$data["Name"]}");
+			$email->setSubject("AchtenIO Contact Message from {$data["Name"]}");
 
 			$messageBody = "
 				<p><strong>Name:</strong> {$data['Name']}</p>
@@ -54,16 +54,18 @@
 			";
 			$email->setBody($messageBody);
 
-			echo($email->To());
-			echo($email->From());
-			echo($email->Subject());
-			echo($email->Body());
-
 			$email->send();
 
 			$form->sessionMessage("Thanks for your message, I'll get back to you as soon as I can",'good');
 
 			return $this->redirectBack();
+
+			// $email = new Email('rian.acton@yahoo.com', 'rian.acton@yahoo.com', 'test subject', 'test body');
+			// echo($email->To());
+			// echo($email->From());
+			// echo($email->Subject());
+			// echo($email->Body());			
+			// $email->send();
 		}
 	}
 ?>

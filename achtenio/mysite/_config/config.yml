@@ -9,3 +9,6 @@ After:
 # Caution: Indentation through two spaces, not tabs
 SSViewer:
   theme: 'achtenio-theme01'
+
+Email:
+  send_all_emails_to: 'rian.acton@yahoo.com'
