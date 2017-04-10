@@ -1,6 +1,3 @@
-<head>
-	<link rel="stylesheet" type="text/css" href="$ThemeDir/css/project.css">
-</head>
 <body>
 	<main class="container">
 		<header id="project-header" style="background-image:url($HeaderImage.Filename);">

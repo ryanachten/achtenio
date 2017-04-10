@@ -9,7 +9,6 @@
 			'Teaser' => 'Text',
 			'Client' => 'Varchar',
 			'Behance' => 'Varchar' //not sure if should be text of varchar (limit in tut is 100 vs doc 255)
-			// Software section - not sure how to do
 		);
 
 		private static $has_one = array(
@@ -71,6 +70,10 @@
 
 	class WorkPage_Controller extends Page_Controller{
 		
+		public function init(){
+			parent::init();
+			Requirements::css($this->ThemeDir()."/css/project.css");
+		}
 	}
 
 ?>
