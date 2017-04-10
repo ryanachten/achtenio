@@ -59,13 +59,6 @@
 			$form->sessionMessage("Thanks for your message, I'll get back to you as soon as I can",'good');
 
 			return $this->redirectBack();
-
-			// $email = new Email('rian.acton@yahoo.com', 'rian.acton@yahoo.com', 'test subject', 'test body');
-			// echo($email->To());
-			// echo($email->From());
-			// echo($email->Subject());
-			// echo($email->Body());			
-			// $email->send();
 		}
 	}
 ?>
