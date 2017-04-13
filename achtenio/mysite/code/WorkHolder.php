@@ -41,14 +41,23 @@
 					$date = date('Y', $date);
 					if(!in_array($date, $dates)){
 						array_push($dates, $date);
-						echo($date);
 					}
 					$client = $page->Client;
 					if(!in_array($client, $clients)){
 						array_push($clients, $client);
-						echo($client);
 					}
 				}
+			}
+			$pageCategories = array();
+			$workCategories = WorkCategory::get();
+			foreach ($workCategories as $cat) {
+				array_push($pageCategories, $cat->Title);
+			}
+			$pageSoftware = array();
+			$workSoftware = WorkSoftware::get();
+			foreach ($workSoftware as $soft) {
+				// echo($soft->Title);
+				array_push($pageSoftware, $soft->Title);
 			}
 
 
@@ -57,10 +66,20 @@
 				'WorkSearchForm',
 				FieldList::create(
 					DropdownField::create('Date')
+						->setEmptyString('-- select date --')
 						->setSource($dates)
 						->addExtraClass('filter-input'),
 					DropdownField::create('Client')
+						->setEmptyString('-- select client --')
 						->setSource($clients)
+						->addExtraClass('filter-input'),
+					DropdownField::create('Categories')
+						->setEmptyString('-- select category --')
+						->setSource($pageCategories)
+						->addExtraClass('filter-input'),
+					DropdownField::create('Software')
+						->setEmptyString('-- select software --')
+						->setSource($pageSoftware)
 						->addExtraClass('filter-input')
 				),
 				FieldList::create(
