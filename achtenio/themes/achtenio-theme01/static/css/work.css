@@ -82,7 +82,16 @@
 .filter-input option{
 	padding: 10px;
 }
-
+.submit-filter-button{
+	font-family: 'Libre Baskerville', cursive;
+	color: white;
+	text-transform: lowercase;    
+	font-size: 1.2em;
+    background-color: #4d4d4d;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
 
 /*General project covers*/
 .project-cover{
