@@ -29,6 +29,51 @@
 
 	class WorkHolder_Controller extends Page_Controller{
 		
+		public function WorkSearchForm(){
+
+			$pages = WorkPage::get();
+			$dates = array();
+			$clients = array();
+
+			if($pages->exists()){
+				foreach ($pages as $page) {
+					$date = strtotime($page->Date);
+					$date = date('Y', $date);
+					if(!in_array($date, $dates)){
+						array_push($dates, $date);
+						echo($date);
+					}
+					$client = $page->Client;
+					if(!in_array($client, $clients)){
+						array_push($clients, $client);
+						echo($client);
+					}
+				}
+			}
+
+
+			$form = Form::create(
+				$this,
+				'WorkSearchForm',
+				FieldList::create(
+					DropdownField::create('Date')
+						->setSource($dates)
+						->addExtraClass('filter-input'),
+					DropdownField::create('Client')
+						->setSource($clients)
+						->addExtraClass('filter-input')
+				),
+				FieldList::create(
+					FormAction::create('doWorkFilter', 'Filter')
+					->addExtraClass('submit-filter-button')
+				)
+			);
+
+			$form->setFormMethod('GET')
+				->setFormAction($this->Link());
+
+			return $form;
+		}
 	}
 
 ?>

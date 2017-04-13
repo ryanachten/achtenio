@@ -6,7 +6,7 @@
 				<h2 id="project-subtitle">$Subtitle</h2>
 			</div>
 		</header>
-	
+		
 		<div id="project-overview">
 			<p class="pullquote">$Teaser</p>
 			<hr>
