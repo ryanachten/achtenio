@@ -22,6 +22,10 @@
 			</div>
 		</div>
 
+		<div class="filter-panel">
+			$WorkSearchForm
+		</div>
+
 		<!-- Project gallery tiles -->
 		<% loop $Children %>
 			<div class="project-cover" style="background-image:url($HeaderImage.Filename);">

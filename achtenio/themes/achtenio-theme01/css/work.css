@@ -56,6 +56,22 @@
 }
 
 
+/*Filter panels styles*/
+.filter-panel{
+	width: 30%;
+	height: 400px;
+	border: dashed 1px #4d4d4d;
+	text-align: center;
+	padding: 20px;
+	overflow-y: auto;
+}
+.filter-input{
+	background-color: white;
+	border: none;
+	/*padding: 10px;*/
+	margin-bottom: 10px;
+}
+
 /*General project covers*/
 .project-cover{
 	opacity: 0; /*Disabled during SS setup*/
@@ -124,10 +140,10 @@
 		/*margin-bottom: 30px;*/
 	}
 	.project-header{
-		/*margin-bottom: 30px;*/
+		width: 60%;
 	}
 	.project-header-descript{
-		width: 30%;
+		width: 50%;
 	}
 	.container{
 		width: 1200px;
