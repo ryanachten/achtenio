@@ -100,21 +100,25 @@
 				'WorkSearchForm',
 				FieldList::create(
 					DropdownField::create('Date', 'Year')
-						->setEmptyString('-- select year --')
+						->setEmptyString('+')
 						->setSource(ArrayLib::valuekey($dates))
-						->addExtraClass('filter-input'),
+						->addExtraClass('filter-input')
+						->setValue($this->request->getVar('Date')),
 					DropdownField::create('Client')
-						->setEmptyString('-- select client --')
+						->setEmptyString('+')
 						->setSource(ArrayLib::valuekey($clients))
-						->addExtraClass('filter-input'),
+						->addExtraClass('filter-input')
+						->setValue($this->request->getVar('Client')),
 					DropdownField::create('Categories')
-						->setEmptyString('-- select category --')
+						->setEmptyString('+')
 						->setSource(ArrayLib::valuekey($pageCategories))
-						->addExtraClass('filter-input'),
+						->addExtraClass('filter-input')
+						->setValue($this->request->getVar('Categories')),
 					DropdownField::create('Software')
-						->setEmptyString('-- select software --')
+						->setEmptyString('+')
 						->setSource(ArrayLib::valuekey($pageSoftware))
 						->addExtraClass('filter-input')
+						->setValue($this->request->getVar('Software'))
 				),
 				FieldList::create(
 					FormAction::create('doWorkFilter', 'Filter')
