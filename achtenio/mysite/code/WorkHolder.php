@@ -30,10 +30,39 @@
 	class WorkHolder_Controller extends Page_Controller{
 		
 		public function init() {
-		parent::init();
+			parent::init();
 			Requirements::css($this->ThemeDir()."/css/work.css");
 		}
 		
+		public function index(SS_HTTPRequest $request){
+			
+			$projects = WorkPage::get();
+
+			if($search = $request->getVar('Date')){
+				$projects = $projects->filter(array(
+					'Date:PartialMatch' => $search
+				));
+			}
+			if($search = $request->getVar('Client')){
+				$projects = $projects->filter(array(
+					'Client:PartialMatch' => $search
+				));
+			}
+			if($search = $request->getVar('Categories')){
+				$projects = $projects->filterAny(array(
+					'Categories.Title:PartialMatch' => $search
+				));
+			}
+			if($search = $request->getVar('Software')){
+				$projects = $projects->filterAny(array(
+					'Software.Title:PartialMatch' => $search
+				));
+			}
+
+			return array(
+				'Results' => $projects
+			);
+		}	
 
 		public function WorkSearchForm(){
 
@@ -72,19 +101,19 @@
 				FieldList::create(
 					DropdownField::create('Date')
 						->setEmptyString('-- select date --')
-						->setSource($dates)
+						->setSource(ArrayLib::valuekey($dates))
 						->addExtraClass('filter-input'),
 					DropdownField::create('Client')
 						->setEmptyString('-- select client --')
-						->setSource($clients)
+						->setSource(ArrayLib::valuekey($clients))
 						->addExtraClass('filter-input'),
 					DropdownField::create('Categories')
 						->setEmptyString('-- select category --')
-						->setSource($pageCategories)
+						->setSource(ArrayLib::valuekey($pageCategories))
 						->addExtraClass('filter-input'),
 					DropdownField::create('Software')
 						->setEmptyString('-- select software --')
-						->setSource($pageSoftware)
+						->setSource(ArrayLib::valuekey($pageSoftware))
 						->addExtraClass('filter-input')
 				),
 				FieldList::create(
@@ -97,6 +126,7 @@
 			$form->setFormMethod('GET')
 				->setFormAction($this->Link())
 				->disableSecurityToken();
+				// ->loadDataFrom($this->$request->getVars());
 
 			return $form;
 		}
