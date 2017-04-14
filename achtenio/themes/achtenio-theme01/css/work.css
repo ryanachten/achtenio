@@ -60,10 +60,11 @@
 .filter-panel{
 	width: 32%;
 	height: 400px;
-	border: dashed 1px #4d4d4d;
+	/*border: dashed 1px #4d4d4d;*/
 	text-align: center;
 	padding: 20px;
 	overflow-y: auto;
+	margin-bottom: 30px;
 
 }
 #filter-header{
@@ -73,17 +74,28 @@
 .filter-input{
 	background-color: rgba(0,0,0,0);
 	border: dashed 1px #4d4d4d;
-	/*padding: 10px;*/
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
 }
 fieldset{
 	border: none;
+	margin: 0px;
+	padding: 0px;
 }
 .filter-input select{
 	padding: 5px;
 	border: solid 1px #4d4d4d;
 	background-color: rgba(255, 255, 255, 0.7);
+	width: 60%;
+	/*height: 30px;*/
+	margin-bottom: 10px;
+	/*display: none;*/
 }
+/*.filter-input select:hover{
+	display: block;
+}*/
 .submit-filter-button{
 	color: rgba(0,0,0,0);
 	background-size: cover;

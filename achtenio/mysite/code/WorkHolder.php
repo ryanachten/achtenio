@@ -99,8 +99,8 @@
 				$this,
 				'WorkSearchForm',
 				FieldList::create(
-					DropdownField::create('Date')
-						->setEmptyString('-- select date --')
+					DropdownField::create('Date', 'Year')
+						->setEmptyString('-- select year --')
 						->setSource(ArrayLib::valuekey($dates))
 						->addExtraClass('filter-input'),
 					DropdownField::create('Client')
