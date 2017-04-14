@@ -77,22 +77,26 @@
 					if(!in_array($date, $dates)){
 						array_push($dates, $date);
 					}
-					$client = $page->Client;
+					$client = $page->Client;					
 					if(!in_array($client, $clients)){
 						array_push($clients, $client);
 					}
 				}
+				arsort($dates);
+				asort($clients);
 			}
 			$pageCategories = array();
 			$workCategories = WorkCategory::get();
 			foreach ($workCategories as $cat) {
 				array_push($pageCategories, $cat->Title);
 			}
+			asort($pageCategories);
 			$pageSoftware = array();
 			$workSoftware = WorkSoftware::get();
 			foreach ($workSoftware as $soft) {
 				array_push($pageSoftware, $soft->Title);
 			}
+			asort($pageSoftware);
 
 
 			$form = Form::create(
@@ -130,7 +134,6 @@
 			$form->setFormMethod('GET')
 				->setFormAction($this->Link())
 				->disableSecurityToken();
-				// ->loadDataFrom($this->$request->getVars());
 
 			return $form;
 		}

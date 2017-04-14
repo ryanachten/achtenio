@@ -3,7 +3,7 @@
 
 	<section class="work-overview">
 		<h1>$Title</h1>
-		<h2>recent design &amp; development projects</h2><!-- Could replace this with $Content -->
+		<h2>selected design &amp; development projects:</h2>
 	</section>
 
 	<main class="container">
