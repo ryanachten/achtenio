@@ -1,7 +1,3 @@
-<head>	
-	<link rel="stylesheet" type="text/css" href="$ThemeDir/css/work.css">
-</head>
-
 <body>
 	<!-- $Breadcrumbs TODO: Haven't styled -->
 
@@ -23,6 +19,7 @@
 		</div>
 
 		<div class="filter-panel">
+			<h2 id="filter-header">Filter Projects</h2>
 			$WorkSearchForm
 		</div>
 

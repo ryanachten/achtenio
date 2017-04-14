@@ -29,6 +29,11 @@
 
 	class WorkHolder_Controller extends Page_Controller{
 		
+		public function init() {
+		parent::init();
+			Requirements::css($this->ThemeDir()."/css/work.css");
+		}
+
 		public function WorkSearchForm(){
 
 			$pages = WorkPage::get();
@@ -56,7 +61,6 @@
 			$pageSoftware = array();
 			$workSoftware = WorkSoftware::get();
 			foreach ($workSoftware as $soft) {
-				// echo($soft->Title);
 				array_push($pageSoftware, $soft->Title);
 			}
 
@@ -83,8 +87,9 @@
 						->addExtraClass('filter-input')
 				),
 				FieldList::create(
-					FormAction::create('doWorkFilter', 'Filter')
+					FormAction::create('doWorkFilter', ' ')
 					->addExtraClass('submit-filter-button')
+					->setAttribute('style','background-image: url('.$this->ThemeDir().'/img/achtenio_filtericon.svg)')
 				)
 			);
 
