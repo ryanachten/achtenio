@@ -33,6 +33,7 @@
 		parent::init();
 			Requirements::css($this->ThemeDir()."/css/work.css");
 		}
+		
 
 		public function WorkSearchForm(){
 
@@ -87,14 +88,15 @@
 						->addExtraClass('filter-input')
 				),
 				FieldList::create(
-					FormAction::create('doWorkFilter', ' ')
+					FormAction::create('doWorkFilter', 'Filter')
 					->addExtraClass('submit-filter-button')
 					->setAttribute('style','background-image: url('.$this->ThemeDir().'/img/achtenio_filtericon.svg)')
 				)
 			);
 
 			$form->setFormMethod('GET')
-				->setFormAction($this->Link());
+				->setFormAction($this->Link())
+				->disableSecurityToken();
 
 			return $form;
 		}
